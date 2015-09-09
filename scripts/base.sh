@@ -3,15 +3,23 @@
 export DEBIAN_FRONTEND=noninteractive
 
 # Update the box
-apt-get -y update
-apt-get -y install linux-headers-$(uname -r) build-essential
+apt-get -qqy update
+apt-get -qqy install linux-headers-$(uname -r) build-essential
 
 # Install development tools
-apt-get -y install zlib1g-dev libssl-dev libreadline-gplv2-dev
-apt-get -y install curl wget vim mc screen zsh unzip pbzip2 lsof htop iotop dstat telnet tcpdump make python python-apt
+apt-get -qqy install zlib1g-dev libssl-dev libreadline-gplv2-dev \
+  curl wget vim mc screen zsh unzip pbzip2 lsof htop iotop dstat \
+  telnet tcpdump make python python-apt ruby \
+  openjdk-7-jre
+
+# Remove unneeded items
+apt-get purge exim4 exim4-base
 
 # Set up sudo
 echo 'vagrant ALL=NOPASSWD:ALL' > /etc/sudoers.d/vagrant
+
+# Disable barriers on root filesystem
+sed -i 's/noatime,errors/barrier=0,noatime,errors/' /etc/fstab
 
 # Tweak sshd to prevent DNS resolution (speed up logins)
 echo 'UseDNS no' >> /etc/ssh/sshd_config
