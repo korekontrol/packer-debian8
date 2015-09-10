@@ -9,8 +9,8 @@ apt-get -qqy install linux-headers-$(uname -r) build-essential
 # Install development tools
 apt-get -qqy install zlib1g-dev libssl-dev libreadline-gplv2-dev \
   curl wget vim mc screen zsh unzip pbzip2 lsof htop iotop dstat \
-  telnet tcpdump make python python-apt ruby \
-  openjdk-7-jre
+  telnet tcpdump make python python-apt python-dev ruby \
+  openjdk-7-jre pkg-config libexpat1-dev avahi-daemon
 
 # Remove unneeded items
 apt-get purge exim4 exim4-base
@@ -19,7 +19,7 @@ apt-get purge exim4 exim4-base
 echo 'vagrant ALL=NOPASSWD:ALL' > /etc/sudoers.d/vagrant
 
 # Disable barriers on root filesystem
-sed -i 's/noatime,errors/barrier=0,noatime,errors/' /etc/fstab
+sed -i 's/noatime,errors/nobarrier,noatime,errors/' /etc/fstab
 
 # Tweak sshd to prevent DNS resolution (speed up logins)
 echo 'UseDNS no' >> /etc/ssh/sshd_config
