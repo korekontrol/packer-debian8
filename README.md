@@ -23,10 +23,7 @@ $ packer build debian-7-wheezy-virtualbox.json
 $ vagrant box add debian-78 ./debian-78.box
 ```
 
-or
-
-The VM image has been imported to vagrant, it's now available on your system.
 
 ## Credits
-
-  Many thanks to Tech-Angels Inc.
+Created by [Marek Obuchowicz](https://github.com/marek-obuchowicz) from [KoreKontrol](https://www.korekontrol.eu/)
+Many thanks to Tech-Angels Inc.
