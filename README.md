@@ -7,8 +7,7 @@ KoreKontrol (https://www.korekontrol.eu/)
 
 * Packer (>= 0.5.0)(http://www.packer.io/downloads.html)
 * Vagrant (>= 1.2.4)(http://downloads.vagrantup.com/)
-* Vmware or Virtualbox
-* Vagrant vmware plugin if you're using vmware (http://www.vagrantup.com/vmware)
+* Virtualbox
 
 ## Build vagrant box
 
