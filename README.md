@@ -25,5 +25,6 @@ $ vagrant box add debian-78 ./debian-78.box
 
 
 ## Credits
-Created by [Marek Obuchowicz](https://github.com/marek-obuchowicz) from [KoreKontrol](https://www.korekontrol.eu/)
+Created by [Marek Obuchowicz](https://github.com/marek-obuchowicz) from [KoreKontrol](https://www.korekontrol.eu/).  
+
 Many thanks to Tech-Angels Inc.
