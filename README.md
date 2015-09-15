@@ -12,14 +12,14 @@ KoreKontrol (https://www.korekontrol.eu/)
 ## Build vagrant box
 
 ```bash
-$ packer build debian-7-wheezy-virtualbox.json
+$ packer build debian-8-jessie-virtualbox.json
 ```
 
 
 ## Install your new box
 
 ```bash
-$ vagrant box add debian-78 ./debian-78.box
+$ vagrant box add debian-81 ./debian-81.box
 ```
 
 
