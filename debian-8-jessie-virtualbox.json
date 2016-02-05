@@ -5,8 +5,8 @@
     "disk_size": "16384",
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
-    "iso_url": "http://cdimage.debian.org/cdimage/archive/8.3.0/amd64/iso-cd/debian-8.3.0-amd64-netinst.iso",
-    "iso_md5": "1a311f9afb68d6365211b13b4342c40b",
+    "iso_url": "http://cdimage.debian.org/cdimage/release/8.3.0/amd64/iso-cd/debian-8.3.0-amd64-netinst.iso",
+    "iso_md5": "a9b490b4215d1e72e876b031dafa7184",
     "vm_name": "debian83"
   },
   "builders": [
