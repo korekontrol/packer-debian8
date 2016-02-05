@@ -13,13 +13,13 @@ apt-get -qqy install zlib1g-dev libssl-dev libreadline-gplv2-dev \
   openjdk-7-jre pkg-config libexpat1-dev avahi-daemon
 
 # Remove unneeded items
-apt-get purge exim4 exim4-base
+apt-get -qy purge exim4 exim4-base
 
 # Set up sudo
 echo 'vagrant ALL=NOPASSWD:ALL' > /etc/sudoers.d/vagrant
 
 # Disable barriers on root filesystem
-sed -i 's/noatime,errors/nobarrier,noatime,errors/' /etc/fstab
+sed -i 's/noatime,errors/nobarrier,noatime,nodiratime,errors/' /etc/fstab
 
 # Tweak sshd to prevent DNS resolution (speed up logins)
 echo 'UseDNS no' >> /etc/ssh/sshd_config

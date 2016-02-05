@@ -18,7 +18,7 @@ if test -f .vbox_version ; then
   mount -o loop VBoxGuestAdditions.iso /mnt
   yes|sh /mnt/VBoxLinuxAdditions.run
   umount /mnt
-  rm -f VBoxLinuxAdditions.iso
+  rm -f VBoxGuestAdditions.iso
 
   # Start the newly build driver
   service vboxadd start
