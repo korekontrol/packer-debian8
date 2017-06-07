@@ -2,12 +2,12 @@
   "variables": {
     "core": "2",
     "memory": "1024",
-    "disk_size": "50000",
+    "disk_size": "75000",
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
-    "iso_url": "http://cdimage.debian.org/cdimage/release/8.7.1/amd64/iso-cd/debian-8.7.1-amd64-netinst.iso",
-    "iso_md5": "453312bf56fc45669fec5ebc0f025ac7",
-    "vm_name": "debian87"
+    "iso_url": "https://cdimage.debian.org/cdimage/release/8.8.0/amd64/iso-cd/debian-8.8.0-amd64-netinst.iso",
+    "iso_md5": "f8963c5b9f8b679cfc6b4939e4897eac",
+    "vm_name": "debian88"
   },
   "builders": [
     {
