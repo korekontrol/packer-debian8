@@ -19,7 +19,7 @@ $ packer build debian-8-jessie-virtualbox.json
 ## Install your new box
 
 ```bash
-$ vagrant box add debian-81 ./debian-81.box
+$ vagrant box add debian-89 ./debian-89.box
 ```
 
 
