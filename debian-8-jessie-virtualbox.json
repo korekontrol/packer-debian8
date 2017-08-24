@@ -5,9 +5,9 @@
     "disk_size": "75000",
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
-    "iso_url": "https://cdimage.debian.org/cdimage/release/8.8.0/amd64/iso-cd/debian-8.8.0-amd64-netinst.iso",
-    "iso_md5": "f8963c5b9f8b679cfc6b4939e4897eac",
-    "vm_name": "debian88"
+    "iso_url": "https://cdimage.debian.org/cdimage/archive/8.9.0/amd64/iso-cd/debian-8.9.0-amd64-netinst.iso",
+    "iso_md5": "45cb6f0f1123d265d82614b9d4093c76",
+    "vm_name": "debian89"
   },
   "builders": [
     {
