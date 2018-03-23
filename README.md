@@ -1,3 +1,6 @@
+# Deprecition note
+Debian 8 is already an old distribution and if possible, Debian 9 should be used. This repository won't be maintained anymore, for new version check [Debian 9 packer repository](https://github.com/korekontrol/packer-debian9)
+
 # KoreKontrol Packer templates
 This repository contains packer files to build a Debian 8.x vagrant box,
 with preinstalled development tools (like git, vim). Released by
